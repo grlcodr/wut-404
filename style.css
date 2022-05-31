@@ -87,9 +87,9 @@ img {
 .home {
     background-color: var(--pink);
     padding: 9rem 0 2rem;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .home-container {
@@ -105,6 +105,79 @@ img {
     font-size: var(--large-font);
     font-weight: 700;
     margin-bottom: 2rem;
+}
+
+.home-btn {
+    margin-top: 2rem;
+    display: inline-block;
+    background-color: var(--black);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    transition: .4s;
+}
+
+.home-btn:hover {
+    box-shadow: 0 4px 12px hsla(38, 4%, 20%, 0.2);
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-img {
+    width: 280px;
+}
+
+.img-shadow {
+    width: 230px;
+    height: 24px;
+    background-color: hsla(38, 4%, 20%, 0.2);
+    margin: 0 auto;
+    border-radius: 50%;
+    filter: blur(9px);
+}
+
+.home-footer-container {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--small-font);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.home-footer {
+    position:fixed;
+    bottom:0;
+    width: 100vw;
+    margin-bottom: 1rem; 
+}
+
+.home-footer-social {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+    .home {
+        padding-top: 4rem;
+    };
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        height: calc(5.5rem + 1rem);
+    }
+    .nav-toggle, .nav-close {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        column-gap: 2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -137,5 +210,39 @@ img {
 
     .show-menu {
         top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .home {
+        justify-content: center;
+    }
+    
+    .home-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .home-content {
+        width: 30%;
+    }
+
+    #home-img {
+        width: 380px;
+    }
+
+    .home-footer {
+        position:fixed;
+        bottom:0;
+        width: 100vw;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1048px){
+    .container {
+        margin: 0 auto;
     }
 }

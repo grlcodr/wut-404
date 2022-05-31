@@ -24,3 +24,12 @@ const linkAction = () => {
 navLink.forEach(link => {
     link.addEventListener('click', linkAction);
 });
+
+const sr = ScrollReveal({
+    distance: '90px', 
+    duration: 3000,
+})
+
+sr.reveal(`.home-content`, {origin: 'top', delay: 400});
+sr.reveal(`figure`, {origin: 'bottom', delay: 600});
+sr.reveal(`footer`, {origin: 'bottom', delay: 800});
